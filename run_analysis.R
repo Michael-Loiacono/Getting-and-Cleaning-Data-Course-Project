@@ -120,11 +120,12 @@ cutData <- newLabelData[, ! names(newLabelData) %in% aT, drop = F]
 
 finalTidy <- (cutData %>% group_by(subjectID,activityID) %>% summarise_each(funs(mean)));
 
-## Add the activityType back in
+## Add the activityType back in and order by activityID then subjectID
 
 finalTidy <- merge(activityLabels, finalTidy);
+finalTidyO<-arrange(finalTidy, activityID, subjectID)
 
 ## Write the table to the working directory
 
-write.table(finalTidy, './tidyData.txt', row.names = FALSE)
+write.table(finalTidyO, './tidyData.txt', row.names = FALSE)
 ##PART 5 COMPLETE
