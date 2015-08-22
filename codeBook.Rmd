@@ -1,0 +1,104 @@
+---
+title: "codeBook"
+author: "Michael Loiacono"
+date: "August 21, 2015"
+output: html_document
+---
+
+# Code Book
+
+The codebook is for the `tidyData.txt` document.
+
+
+
+## Identifiers
+
+* `subjectID` - The ID of the test subject
+* `activityID` - The ID of the activity performed
+* `activityType` - The type of activity performed in the measurements
+
+## Measurements
+
+Each Measurement is an mean of the tests per subject by activity.
+These signals were used to estimate variables of the feature vector for each pattern:  
+'ForXYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+If there is no 'ForXYZ' then it is an average of the signals
+All columns with mean or std were included, except those which were for mean freq
+since that is not a direct measurment of a mean.
+
+* `tBodyAccMeanX`
+* `timeBodyAccelerometerMeanForX`                          
+* `timeBodyAccelerometerMeanForY`                           
+* `timeBodyAccelerometerMeanForZ`                           
+* `timeBodyAccelerometerStandardDeviationForX`              
+* `timeBodyAccelerometerStandardDeviationForY`              
+* `timeBodyAccelerometerStandardDeviationForZ`              
+* `timeGravityAccelerometerMeanForX`                        
+* `timeGravityAccelerometerMeanForY`                        
+* `timeGravityAccelerometerMeanForZ`                        
+* `timeGravityAccelerometerStandardDeviationForX`           
+* `timeGravityAccelerometerStandardDeviationForY`           
+* `timeGravityAccelerometerStandardDeviationForZ`           
+* `timeBodyAccelerometerJerkMeanForX`                       
+* `timeBodyAccelerometerJerkMeanForY`                       
+* `timeBodyAccelerometerJerkMeanForZ`                       
+* `timeBodyAccelerometerJerkStandardDeviationForX`          
+* `timeBodyAccelerometerJerkStandardDeviationForY`          
+* `timeBodyAccelerometerJerkStandardDeviationForZ`          
+* `timeBodyGyroscopeMeanForX`                               
+* `timeBodyGyroscopeMeanForY`                               
+* `timeBodyGyroscopeMeanForZ`                               
+* `timeBodyGyroscopeStandardDeviationForX`                  
+* `timeBodyGyroscopeStandardDeviationForY`                  
+* `timeBodyGyroscopeStandardDeviationForZ`                  
+* `timeBodyGyroscopeJerkMeanForX`                           
+* `timeBodyGyroscopeJerkMeanForY`                           
+* `timeBodyGyroscopeJerkMeanForZ`                           
+* `timeBodyGyroscopeJerkStandardDeviationForX`              
+* `timeBodyGyroscopeJerkStandardDeviationForY`              
+* `timeBodyGyroscopeJerkStandardDeviationForZ`              
+* `timeBodyAccelerometerMagnitudeMean`                      
+* `timeBodyAccelerometerMagnitudeStandardDeviation`         
+* `timeGravityAccelerometerMagnitudeMean`                   
+* `timeGravityAccelerometerMagnitudeStandardDeviation`      
+* `timeBodyAccelerometerJerkMagnitudeMean`                  
+* `timeBodyAccelerometerJerkMagnitudeStandardDeviation`     
+* `timeBodyGyroscopeMagnitudeMean`                          
+* `timeBodyGyroscopeMagnitudeStandardDeviation`             
+* `timeBodyGyroscopeJerkMagnitudeMean`                      
+* `timeBodyGyroscopeJerkMagnitudeStandardDeviation`         
+* `frequencyBodyAccelerometerMeanForX`                      
+* `frequencyBodyAccelerometerMeanForY`                      
+* `frequencyBodyAccelerometerMeanForZ`                      
+* `frequencyBodyAccelerometerStandardDeviationForX`         
+* `frequencyBodyAccelerometerStandardDeviationForY`         
+* `frequencyBodyAccelerometerStandardDeviationForZ`         
+* `frequencyBodyAccelerometerJerkMeanForX`                  
+* `frequencyBodyAccelerometerJerkMeanForY`                  
+* `frequencyBodyAccelerometerJerkMeanForZ`                  
+* `frequencyBodyAccelerometerJerkStandardDeviationForX`     
+* `frequencyBodyAccelerometerJerkStandardDeviationForY`     
+* `frequencyBodyAccelerometerJerkStandardDeviationForZ`     
+* `frequencyBodyGyroscopeMeanForX`                          
+* `frequencyBodyGyroscopeMeanForY`                          
+* `frequencyBodyGyroscopeMeanForZ`                          
+* `frequencyBodyGyroscopeStandardDeviationForX`             
+* `frequencyBodyGyroscopeStandardDeviationForY`             
+* `frequencyBodyGyroscopeStandardDeviationForZ`             
+* `frequencyBodyAccelerometerMagnitudeMean`                 
+* `frequencyBodyAccelerometerMagnitudeStandardDeviation`    
+* `frequencyBodyAccelerometerJerkMagnitudeMean`             
+* `frequencyBodyAccelerometerJerkMagnitudeStandardDeviation`
+* `frequencyBodyGyroscopeMagnitudeMean`                     
+* `frequencyBodyGyroscopeMagnitudeStandardDeviation`        
+* `frequencyBodyGyroscopeJerkMagnitudeMean`                 
+* `frequencyBodyGyroscopeJerkMagnitudeStandardDeviation` 
+
+## Activity Types
+
+* `WALKING` (value `1`): subject was walking during the test
+* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
+* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
+* `SITTING` (value `4`): subject was sitting during the test
+* `STANDING` (value `5`): subject was standing during the test
+* `LAYING` (value `6`): subject was laying down during the test
