@@ -10,4 +10,4 @@ The following run_analysis.R code does the following:
 
 Each step is in a separate section of the run_analysis.R code
 
-The Code Book describes the variables in the tidyData.txt file. Each value is a mean of the values in the raw data.
+The Code Book describes the variables in the tidyData.txt file. Each value is a mean of the values in the raw data. The codebook will provide additional information about each activity and clarify some of the column headers.
